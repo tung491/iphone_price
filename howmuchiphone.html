@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iphone Xs Max price</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <style></style>
+<</div>/head>
+<body>
+<div class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                <h1 class="title is-3">Iphone Xs max price</h1>
+            </a>
+        </div>
+    </nav>
+    <section class="hero is-large">
+        <div class="container has-text-centered">
+                <p align="center">
+                    <iframe src="https://giphy.com/embed/21N1qGetTea0cZymw4" width="480" height="138" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/21N1qGetTea0cZymw4"></a></p>
+                </p>
+
+            <h3 class="subtitle">Tính giá iPhone Xs max theo dung lượng bộ nhớ</h3>
+            <div class="column is-three-fifths is-offset-one-fifth">
+                <input class="input is-primary" id="input" cols="30" rows="10" placeholder="Nhập dung lượng của iphone" type="number" onkeyup="calucate_price()">
+            </div>
+            <div id="output"></div>
+        </div>
+    </section>
+
+</div>
+<script>
+    function calucate_price() {
+        var input = document.getElementById('input');
+        var price = Math.floor(38227027.027027026 + 23099.66216216 * Number(input.value));
+        price = price.toString();
+        price = price.split("").reverse().join("").match(/.{1,3}/g).join().split("").reverse().join("");
+        document.getElementById('output').innerHTML = "Giá tiền của Iphone XS max bản " + input.value + "GB là: " + price + ' VND';
+    }
+</script>
+</body>
+</html>`
